@@ -75,14 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
             const text_button_delete = document.createTextNode("Eliminar Actividad");
             button_delete.appendChild(text_button_delete);
 
-            button_delete.onclick = () =>(
+            const button_update = document.createElement('button');
+            const text_button_update = document.createTextNode('Actualizar');
+            button_update.appendChild(text_button_update)
+
+            button_delete.onclick = () =>{
                 deleteLocalstorage(i,actividades)
-            )
+            }
+
+            button_update.onclick = () =>{
+
+
+            }
 
             div_tareas.appendChild(text_actividad_asociado_wo);
-            div_tareas.appendChild(button_delete)
+            div_tareas.appendChild(button_update);
+            div_tareas.appendChild(button_delete);
 
-            content_div.appendChild(div_tareas)
+            content_div.appendChild(div_tareas);
         }
     }
 

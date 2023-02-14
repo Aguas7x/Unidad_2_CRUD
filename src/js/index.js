@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 wo_input.value = actividades[i].wo;
 
                 // Deshabilita boton agregar
-                add_button.disabled = true;
-                button_update.disabled = true;
-                button_delete.disabled = true;
-                delete_button.disabled = true;
+                add_button.hidden = true;
+                button_update.hidden = true;
+                button_delete.hidden = true;
+                delete_button.hidden = true;
 
                 // Boton guardar
                 const button_save = document.createElement('button');
@@ -114,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     render(actividades);
 
                     button_save.hidden = true;
-                    add_button.disabled = false;
-                    delete_button.disabled = false;
+                    add_button.hidden = false;
+                    delete_button.hidden = false;
                 }
                 form.appendChild(button_save)
             }

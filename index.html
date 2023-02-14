@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades Trabajo</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
     <h1>CRUD ACTIVIDADES TRABAJO</h1>
@@ -18,27 +25,14 @@
 
         <label for="workorder"># Orden de trabajo</label>
         <input type="text" name="wo" id="wo" placeholder="Agregar Work Order">
-        <!-- <button id="add">Agregar</button> -->
-
-        <!-- <label for="ram">Ram</label>
-        <input type="text" name="ram" id="ram">
-
-        <label for="procesador">procesador </label>
-        <input type="text" name="procesador" id="procesador">
-
-        <label for="mgpx">Megapixeles de la camara</label>
-        <input type="text" name="mgpx" id="mgpx"> -->
-
-        
-        <!--<input type="submit" id="add_submit" value="Add">-->
     </form>
     <button id="add">Agregar</button>
     <button id="delete-all">Eliminar Actividades</button>
-
-
+    
     <div id="content">
 
     </div>
+
     <script src="./src/js/index.js"></script>
 </body>
 </html>
